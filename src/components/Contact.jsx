@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="w-screen 2xl:mt-20   h-screen flex items-center flex-col">
+    <div className="w-screen 2xl:mt-20 h-screen flex items-center flex-col" translate="no">
       <h2 className="font-semibold text-[40px]">Contact</h2>
       <form
         action="https://getform.io/f/pbgxvzma"
@@ -26,13 +26,13 @@ const Contact = () => {
           placeholder="Message"
           id=""
           resize="none"
-          className="border border-slate-800 mt-6   2xl:w-[400px]  sm:w-[300px]   "
+          className="border border-slate-800 mt-6 2xl:w-[400px] sm:w-[300px]"
         ></textarea>
         <button
           type="submit"
           className="border border-slate-800 mt-8 2xl:w-[300px] sm:w-[120px] p-2"
         >
-          Enviar
+          Send
         </button>
       </form>
     </div>

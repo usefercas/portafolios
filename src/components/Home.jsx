@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen overflow-hidden relative">
+    <div className="h-screen w-screen overflow-hidden relative" translate="no">
       <img alt="header" src={header} className="md:hidden w-screen" />
       <div className="md:h-20 min-[700px]:hidden bg-[#2B2B29]"></div>
       <img
@@ -15,13 +15,13 @@ const Home = () => {
       />
 
       <div className="absolute md:text-[40px] xl:left-[-20px] xl:text-[40px] md:left-[0] md:w-screen p-6 md:static left-[20%] top-[40%] w-[619px] h-[250px] text-black text-[64px] font-normal">
-        <p>Hi! Im Use a software developer</p>
+        <p translate="no">Hi! I'm Use, a software developer</p>
         <Link
           className="cursor-pointer text-[20px] text-white bg-slate-500 mt-2 p-4"
           to="Projects"
           smooth="500"
         >
-          Portfolio
+          Projects
         </Link>
       </div>
     </div>
