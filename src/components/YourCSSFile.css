@@ -1,10 +1,9 @@
-/* Estilos para el efecto de máquina de escribir */
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
   }
   
-  @keyframes blink {
+  @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: black; }
   }
@@ -12,8 +11,27 @@
   .typewriter-text {
     display: inline-block;
     overflow: hidden;
+    border-right: .15em solid black;
     white-space: nowrap;
-    border-right: 2px solid;
-    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
   }
   
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .typewriter-text {
+      font-size: 24px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .typewriter-text {
+      font-size: 32px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .typewriter-text {
+      font-size: 40px;
+    }
+  }
